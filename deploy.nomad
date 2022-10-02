@@ -90,6 +90,13 @@ job "rabbitmq" {
         CONSUL_SVC_PORT = NOMAD_HOST_PORT_amqp
         CONSUL_SVC_TAGS = "amqp"
       }
+
+      resources {
+        cpu = 100
+        memory = 64
+        memory_max = 128
+      }
+
     }
 
 
